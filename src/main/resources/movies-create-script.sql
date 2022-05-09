@@ -43,7 +43,7 @@ poster VARCHAR(255),
 FOREIGN KEY (director_id) REFERENCES directors(id)
 );
 
-describe movies;
+DESC movies;
 
 
 create table if not exists genres
@@ -61,7 +61,6 @@ create table if not exists movie_genre
     genre_id int unsigned not null,
     foreign key (movie_id) references movies(id),
     foreign key (genre_id) references genres(id)
-
 );
 
 DESC movie_genre;
@@ -72,7 +71,7 @@ create table if not exists actors
     name varchar(255)
 );
 
-DESCactors;
+DESC actors;
 
 create table if not exists movie_actor
 (
